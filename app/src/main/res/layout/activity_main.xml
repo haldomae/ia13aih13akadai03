@@ -7,13 +7,51 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/dog"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!--layout_width="0dp", layout_height="0dp"は画面いっぱいに画像広げる-->
+    <!--
+     <TextView app:layout_constraintXXX_YYY="@id/ZZZ"
+     TextView(自分)のXXXをZZZのYYYと合わせる
+     layout_constraintLeft_toLeftOf="@id/ZZZ"は、私左側をZZZの左側と合わせるという意味になる
+     -->
+    <!--
+     TOP : 上
+     Bottom : 下
+     Start(Left) : 左
+     End(Right) : 右
+     -->
+    <!--
+    layout_constraintBottom_toBottomOf
+    自身の下端と指定したViewの下端を揃える
+     -->
+    <!--
+     layout_constraintEnd_toEndOf
+     自身の右端と指定したViewの右端を揃える
+     -->
+    <!--
+     layout_constraintStart_toStartOf
+     自身の左端と指定したViewの左端を揃える
+     -->
+
+    <!--
+     layout_constraintTop_toTopOf
+     自身の上端と指定したViewの上端を揃える
+     -->
+    <!--
+     layout_constraintHorizontal_bias
+     水平方向の位置を指定
+     -->
+    <!--
+     layout_constraintVertical_bias
+     垂直方向の位置を指定
+     -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
