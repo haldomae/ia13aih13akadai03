@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">kadai03</string>
     <string name="btn_left">左へスライド</string>
-    <string name="bth_right">右へスライド</string>
+    <string name="btn_right">右へスライド</string>
 </resources>
